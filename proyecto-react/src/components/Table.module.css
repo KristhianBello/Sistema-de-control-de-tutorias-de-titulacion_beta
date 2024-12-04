@@ -1,0 +1,55 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+td {
+    background-color: #e9ecef;
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.aceptar-button {
+    background-color: #28a745;
+    color: white;
+}
+
+button.aceptar-button:hover {
+    background-color: #218838;
+}
+
+button.rechazar-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+button.rechazar-button:hover {
+    background-color: #c82333;
+}
+
+button.reasignar-button {
+    background-color: #ffc107;
+    color: black;
+}
+
+button.reasignar-button:hover {
+    background-color: #e0a800;
+}

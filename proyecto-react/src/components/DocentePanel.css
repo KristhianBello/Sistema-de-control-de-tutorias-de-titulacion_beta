@@ -1,0 +1,150 @@
+/* General reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #007BFF; /* Azul elegante */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+button#logout-button {
+  padding: 10px 15px;
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+button#logout-button:hover {
+  background-color: #b02a37;
+}
+
+/* Main container */
+.container {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 900px;
+}
+
+/* Title */
+.container h2 {
+  text-align: center;
+  color: #007BFF;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #007BFF;
+  color: white;
+  font-size: 1rem;
+}
+
+td {
+  background-color: #f8f9fa;
+  font-size: 0.9rem;
+}
+
+/* Action buttons */
+button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+button.aceptar-button {
+  background-color: #28a745; /* Verde para aceptar */
+  color: white;
+}
+
+button.aceptar-button:hover {
+  background-color: #218838;
+}
+
+button.rechazar-button {
+  background-color: #dc3545; /* Rojo para rechazar */
+  color: white;
+}
+
+button.rechazar-button:hover {
+  background-color: #b02a37;
+}
+
+button.reasignar-button {
+  background-color: #ffc107; /* Amarillo para reasignar */
+  color: black;
+}
+
+button.reasignar-button:hover {
+  background-color: #e0a800;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  table {
+    font-size: 0.8rem;
+  }
+
+  button {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
